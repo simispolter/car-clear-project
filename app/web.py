@@ -48,7 +48,7 @@ def compile_filters(args):
  return (' WHERE '+' AND '.join(clauses) if clauses else ''),values,order,f
 
 def create_app(test_config=None):
- app=Flask(__name__);app.config.update(DATABASE=os.environ.get('DATABASE_PATH',str(ROOT/'data/catalog.sqlite')),BASE_URL=(os.environ.get('BASE_URL') or os.environ.get('RENDER_EXTERNAL_URL') or 'http://localhost:8000').rstrip('/'),MAX_CONTENT_LENGTH=65536)
+ app=Flask(__name__);vercel_host=os.environ.get('VERCEL_URL');app.config.update(DATABASE=os.environ.get('DATABASE_PATH',str(ROOT/'data/catalog.sqlite')),BASE_URL=(os.environ.get('BASE_URL') or os.environ.get('RENDER_EXTERNAL_URL') or ('https://'+vercel_host if vercel_host else 'http://localhost:8000')).rstrip('/'),MAX_CONTENT_LENGTH=65536)
  if test_config:app.config.update(test_config)
  def db():
   if 'db' not in g:

@@ -98,3 +98,11 @@ def test_cloud_service_url_is_used_for_canonical_links(monkeypatch):
     assert b'https://car-clear-test.example/' in response.data
     monkeypatch.setenv('BASE_URL','https://custom-domain.example')
     assert create_app().config['BASE_URL']=='https://custom-domain.example'
+
+
+def test_vercel_service_url_is_used_without_a_manual_base_url(monkeypatch):
+    monkeypatch.delenv('BASE_URL',raising=False)
+    monkeypatch.delenv('RENDER_EXTERNAL_URL',raising=False)
+    monkeypatch.setenv('VERCEL_URL','car-clear-test.vercel.app')
+    response=create_app({'TESTING':True}).test_client().get('/robots.txt')
+    assert b'https://car-clear-test.vercel.app/sitemap.xml' in response.data

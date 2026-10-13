@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "flask",
+  "functions": {
+    "index.py": {
+      "maxDuration": 30,
+      "excludeFiles": [
+        "data/catalog.sqlite",
+        "data/.catalog.sqlite.*",
+        "data/drive-data-index.json",
+        "docs/**",
+        "tests/**",
+        ".venv/**",
+        "**/__pycache__/**",
+        ".pytest_cache/**"
+      ]
+    }
+  }
+}

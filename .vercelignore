@@ -1,0 +1,12 @@
+.git/
+.venv/
+.pytest_cache/
+**/__pycache__/
+.env
+.env.*
+data/catalog.sqlite
+data/.catalog.sqlite.*
+data/raw/
+data/drive-data-index.json
+docs/
+tests/
