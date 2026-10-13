@@ -52,4 +52,4 @@ Windows: `run-local.bat` או פקודות Flask שב־README. הקובץ החד
 
 Linux: מתוך תיקיית הפרויקט, `python3 -m venv .venv`, התקנת `requirements-dev.txt`, בדיקות, ואז `.venv/bin/gunicorn --no-control-socket --bind 127.0.0.1:8000 --workers 2 --threads 4 wsgi:app`.
 
-Dockerfile עודכן לכלול את מפות המקורות והתמונות. בניית Docker לא הורצה; אין בה צורך להפעלת הפיתוח באמצעות Flask/Gunicorn.
+לאחר בקשת הפריסה לענן Docker נבנה ונבדק בהצלחה עם צילום נתונים דחוס. ראו `docs/cloud-deployment.md` לפרטי הבנייה והפריסה.

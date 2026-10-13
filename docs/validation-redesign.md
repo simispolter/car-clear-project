@@ -12,6 +12,6 @@ Verified in `/workspace/car-clear-project`, Python 3.12.14, Flask 3.1.3, Gunicor
 - Local font files and four licensed photo families load successfully. Attribution records and source/license links are retained.
 - Source SQLite hash matches the uploaded database; no data rebuild was performed.
 
-Screenshots are in `/workspace/car-clear-review`. The new Windows batch launcher was **not executed on Windows**. Docker build was **not run**. The live Commons import operation and the candidate market-source integrations remain **unverified/blocked** by network/data access; missing market measurements are not presented as real prices or trends.
+Screenshots are in `/workspace/car-clear-review`. The new Windows batch launcher was **not executed on Windows**. Docker was subsequently built and functionally tested for cloud deployment; see `cloud-deployment.md`. The live Commons import operation and the candidate market-source integrations remain **unverified/blocked** by network/data access; missing market measurements are not presented as real prices or trends.
 
-The code is imported into the selected local Git checkout. It has not been pushed to GitHub, deployed as a public website, or copied automatically to the user's Windows machine.
+The code is imported into the selected local Git checkout. It is prepared on the cloud-deployment branch. Public hosting and copying to the user's Windows machine are separate actions; see `cloud-deployment.md`.
