@@ -9,3 +9,4 @@ qa/
 # Runtime data and abandoned SQLite build files; store outside normal Git.
 data/catalog.sqlite
 data/.catalog.sqlite.*
+.vercel
