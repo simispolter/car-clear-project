@@ -1,0 +1,87 @@
+NOTICE
+======
+
+hypercar-colorscripts
+
+One of the first open-source initiatives to bring curated automotive
+art to terminal startup screens. Inspired by pokemon-colorscripts.
+
+Copyright (C) 2026 Tirthraj Raval
+Original author and maintainer: Tirthraj Raval
+Project home: https://github.com/Tirthraj-Raval/hypercar-colorscripts
+
+------------------------------------------------------------------------
+
+Additional terms under GPLv3 section 7(b)
+------------------------------------------
+
+Per GPLv3 section 7(b), the following attribution requirements apply
+to this work. They exist to preserve credit to the original curation
+work as this project travels through forks and derivatives.
+
+  1. This NOTICE file must be preserved unmodified in all
+     redistributions of the source code and included with all
+     compiled / binary distributions.
+
+  2. Any fork, port, or derived work must include the following
+     line, verbatim, in either its LICENSE, NOTICE, README, or
+     an equivalent user-visible location:
+
+         Based on hypercar-colorscripts by Tirthraj Raval —
+         https://github.com/Tirthraj-Raval/hypercar-colorscripts
+
+  3. When redistributing a modified version, please clearly
+     indicate that the work has been modified — for example, by
+     renaming the project or labeling it as a fork in your README.
+
+These terms do not restrict any of the freedoms granted by GPLv3.
+You may still freely use, modify, distribute, and sell derivative
+works of this software. The requirements above only ask that the
+original curation effort remain visible in the chain of attribution.
+
+Contributions of any size are welcome and warmly received — issues,
+pull requests, new cars, alias entries, translations. Attribution
+requirements apply to redistribution, not to using the software or
+contributing back to it.
+
+------------------------------------------------------------------------
+
+Image attribution
+-----------------
+
+Every image bundled with this project carries its own free-license.
+See `assets/licenses/<slug>.json` for per-image attribution records,
+or `CREDITS.md` for a human-readable summary. See `ASSETS-LICENSING.md`
+for the full explanation of the code-vs-assets licensing split.
+
+------------------------------------------------------------------------
+
+Third-party components and inspirations
+---------------------------------------
+
+  - pokemon-colorscripts by phoneybadger
+    https://gitlab.com/phoneybadger/pokemon-colorscripts
+    (Concept of "art in your terminal on every session" — the spark
+    that made this project possible.)
+
+  - chafa by Hans Petter Jansson
+    https://hpjansson.org/chafa/
+    (Universal terminal image rendering. Used at runtime for image
+    display and in the contributor pipeline for ANSI generation.)
+
+  - fastfetch
+    https://github.com/fastfetch-cli/fastfetch
+    (System info alongside the car / pokemon at terminal startup.)
+
+  - rembg by Daniel Gatis
+    https://github.com/danielgatis/rembg
+    (Background removal in the contributor asset pipeline.)
+
+  - Wikimedia Commons and its contributors
+    (Source of every image bundled with this project. This project
+    is a curation on top of their generous work.)
+
+Thank you to everyone who contributes, forks, and shares this
+project. Automotive terminal art deserves a place in the ricing
+community, and none of it would exist without the free-culture
+photographers whose work fills `assets/`.

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="he" dir="rtl" class="no-js">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}}</title><meta name="description" content="{{description|default('מפרטי רכבים בישראל. השוואה לפי גרסה, שנתון ונתונים מתועדים.')}}">
+<link rel="canonical" href="{{base_url}}{{request.path}}"><meta name="robots" content="{{'noindex,follow' if noindex else 'index,follow'}}">
+<meta name="theme-color" content="#141619"><meta property="og:title" content="{{title}}"><meta property="og:type" content="website"><meta property="og:locale" content="he_IL">
+<link rel="icon" href="{{url_for('static',filename='icon.svg')}}" type="image/svg+xml"><link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+<link rel="preload" href="{{url_for('static',filename='fonts/Heebo.ttf')}}" as="font" type="font/ttf" crossorigin>
+<script src="{{url_for('static',filename='app.js')}}" defer></script>
+{% if schema %}<script type="application/ld+json" nonce="{{csp_nonce}}">{{schema|tojson}}</script>{% endif %}
+</head>
+<body><a class="skip" href="#main">דלגו לתוכן</a>
+<header class="header"><div class="container nav"><a class="logo" href="/" aria-label="רכב ברור, דף הבית"><span class="logo-mark" aria-hidden="true">//</span><span>רכב ברור<small dir="ltr">CAR / CLEAR</small></span></a><nav aria-label="ניווט ראשי"><a href="/cars" class="{{'current' if request.path.startswith('/cars')}}">כל הרכבים</a><a href="/compare" class="{{'current' if request.path=='/compare'}}" data-compare-link>השוואה</a><a href="/sources" class="{{'current' if request.path=='/sources'}}">מידע ומקורות</a></nav><a class="compare-link" href="/compare" data-compare-link><span>ההשוואה שלי</span><b data-compare-count>0</b></a></div></header>
+<main id="main">{% block content %}{% endblock %}</main>
+<div class="compare-dock" data-dock hidden><div class="container dock-inner"><div class="dock-selection"><span class="eyebrow">עד 3 רכבים, זה לצד זה</span><strong data-selected-names></strong></div><div class="dock-actions"><button class="text-button" data-clear>ניקוי</button><a class="button" href="/compare" data-compare-link>השוואה <span data-compare-count>0</span> ←</a></div></div></div>
+<div class="toast" role="status" aria-live="polite" hidden></div>
+<footer class="footer"><div class="container footer-inner"><div><a class="logo" href="/"><span class="logo-mark">//</span><span>רכב ברור<small dir="ltr">CAR / CLEAR</small></span></a><p>נתונים על רכבים. מקום להחלטות שלך.</p></div><div class="footer-links"><a href="/sources">מקורות הנתונים</a><a href="/market">נפוצים לפי קטגוריה</a><a href="/guides/prices">מחירון ומחיר שוק</a><a href="/guides/fuel">עלויות נסיעה</a><a href="/guides/child-seats">מושבי בטיחות</a></div><p class="footer-note">מוצגות גרסאות עם יותר מ־{{min_active}} רכבים פעילים במאגר.<br>המחירון מתייחס לרכב חדש בשנת הייצור.<br>צילום הנתונים: {{stats.source_fetched_at[:10] if stats else '2026-10-11'}}.</p></div></footer>
+</body></html>

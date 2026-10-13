@@ -1,0 +1,13 @@
+{
+  "car_slug": "porsche_718_boxster",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/2018_Porsche_718_Boxster_S_S-A_2.5_Front.jpg",
+  "wikimedia_title": "2018 Porsche 718 Boxster S S-A 2.5 Front.jpg",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "author": "<a href=\"//commons.wikimedia.org/wiki/User:Vauxford\" title=\"User:Vauxford\">Vauxford</a>",
+  "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+  "fetcher_tier": 1,
+  "fetcher_source": "wikidata_canonical",
+  "width": 3948,
+  "height": 1812
+}

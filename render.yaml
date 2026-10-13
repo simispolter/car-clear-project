@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: car-clear
+    repo: https://github.com/simispolter/car-clear-project
+    branch: codex/cloud-deploy
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: false

@@ -1,0 +1,6 @@
+{% if car.photo %}
+<img class="vehicle-photo" src="{{url_for('static',filename=car.photo.file)}}" alt="{{car.make}} {{car.model}} — תמונת הדגם, השנתון ורמת הגימור עשויים להיות שונים" loading="{{'eager' if image_eager|default(false) else 'lazy'}}" width="1000" height="650">
+<span class="image-caption">תמונת דור הדגם · {{car.photo.author}} / {{car.photo.license}}</span>
+{% else %}
+<div class="vehicle-placeholder" aria-label="אין עדיין תמונה מאומתת של {{car.make}} {{car.model}}"><span class="blueprint-label" dir="ltr">{{car.brand}} / {{car.model}}</span>{% include 'car-art.html' %}<span class="image-caption">תרשים מרכב כללי · תמונת הדגם טרם אומתה</span></div>
+{% endif %}

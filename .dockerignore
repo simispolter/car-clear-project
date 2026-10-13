@@ -1,0 +1,11 @@
+.venv
+.git
+__pycache__
+.pytest_cache
+data/raw
+qa
+*.zip
+
+data/catalog.sqlite
+data/.catalog.sqlite.*
+.git/

@@ -1,0 +1,16 @@
+{
+  "source_rows": 101824,
+  "exact_duplicates": 0,
+  "identity_conflicts": 0,
+  "price_conflicts": 0,
+  "unmatched_price_keys": 0,
+  "catalog_rows": 101824,
+  "families": 6018,
+  "makes": 138,
+  "price_covered": 101824,
+  "co2_covered": 30525,
+  "seats_covered": 98984,
+  "consumption_covered": 0,
+  "built_at": "2026-10-11T21:06:45.990910+00:00",
+  "source_fetched_at": "2026-10-11T20:37:28.777077+00:00"
+}
